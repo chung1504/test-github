@@ -22,21 +22,24 @@ _Add toàn bộ project (kể cả file bị xóa)_
 _Add interactive(cực mạnh nhưng ít người dùng)_
 
 - git add -p : + nó cho phép chọn từng đoạn code, commit từng phần nhỏ, nếu đã modifier rồi nó sẽ hiện lên là Stage this hunk [y,n,q,a,d,s,e,?]?
-  | Phím | Ý nghĩa 
+  | Phím | Ý nghĩa
   | ---- | --------------
-  | `y` | add đoạn này 
-  | `n` | bỏ qua 
-  | `a` | add tất cả 
-  | `d` | bỏ tất cả 
-  | `s` | tách nhỏ hơn nữa
-  | `e` | sửa tay
-  | `q` | thoát
+  | `y` | add đoạn này (yes)
+  | `n` | bỏ đoạn này (no)
+  | `a` | add tất cả các đoạn còn lại (all)
+  | `d` | bỏ tất cả đoạn còn lại (drop)
+  | `s` | tách nhỏ hơn nữa (split)
+  | `e` | sửa tay (edit)
+  | `q` | thoát (quit)
 
-_Bỏ add 1 file khi lỡ add (unstage)_
+_Bỏ add 1 file khi lỡ add(unstage)_
 
-- git restore --staged + tên file: bỏ file khỏi staging , vẫn theo dõi, cái này phải có ít nhất 1 commit trên repo rồi mới thực hiện được, nó cần HEAD mà HEAD là commit gần nhất
-- git reset + tên file: giống lệnh git restore --staged + tên file những cũ hơn
+- git reset + tên file
 - git rm --cached + tên file : nó bỏ khỏi staging + git tracking, file vẫn còn nhưng k còn theo dõi
+
+_Đã commit ít nhât 1 lần rồi và sửa tiếp, sau đó add tiếp mà muốn bỏ cái add mới thì dùng_
+_có nghĩa nó cần ít nhất 1 commit trước đó rồi_
+- git restore --staged + tên file: bỏ file khỏi staging , vẫn theo dõi, cái này phải có ít nhất 1 commit trên repo rồi mới thực hiện được, nó cần HEAD mà HEAD là commit gần nhất
 
 _Bỏ add tất cả khi lỡ add_
 
