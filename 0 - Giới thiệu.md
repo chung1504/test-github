@@ -23,7 +23,7 @@
 - "-p" : --patch (chọn từng đoạn)
 - "--cached" : làm việc với staging
 - "--amend" : sửa commit
-- "-v" : --verbose(dài dòng)
+- "-v" : --verbose(dài dòng).
 
 
 *Các chữ hoa bên các file*
