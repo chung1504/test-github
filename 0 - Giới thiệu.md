@@ -10,7 +10,7 @@
 - Nó giống như Google Drive nhưng cho lập trình viên nhưng mạnh hơn rất nhiều 
 - CÓ thể lưu code online, quay lại các phiên bản cũ, làm việc nhóm , theo dõi ai sử gì , khi nào 
 
-**Các vùng của git và github** 
+**Các vùng của git và github**  
 - Git có 3 vùng: + Working directory -> file bạn đang sửa
                  + Staging Area -> Vùng chuẩn bị commit 
                  + Repository -> Nơi lưu code chính thức
