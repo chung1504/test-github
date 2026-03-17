@@ -35,16 +35,20 @@ _Add interactive(cực mạnh nhưng ít người dùng)_
 _Bỏ add 1 file khi lỡ add(unstage)_
 
 - git reset + tên file
-- git rm --cached + tên file : nó bỏ khỏi staging + git tracking, file vẫn còn nhưng k còn theo dõi
+
+_git bỏ theo dõi file_
+
+- git rm --cached + tên file : git bỏ theo dõi file vẫn còn nhưng k còn theo dõi (1 file)
+- git rm -r -f --cached . : cũng vậy nhưng mà bỏ theo dõi tất cả file
 
 _Đã commit ít nhât 1 lần rồi và sửa tiếp, sau đó add tiếp mà muốn bỏ cái add mới thì dùng_
 _có nghĩa nó cần ít nhất 1 commit trước đó rồi_
+
 - git restore --staged + tên file: bỏ file khỏi staging , vẫn theo dõi, cái này phải có ít nhất 1 commit trên repo rồi mới thực hiện được, nó cần HEAD mà HEAD là commit gần nhất
 
 _Bỏ add tất cả khi lỡ add_
 
-- git rm -r -f --cached . : cách mới
-- git reset : cách cũ
+- git reset
 
 _Add + Commit nhanh_
 
