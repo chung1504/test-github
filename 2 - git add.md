@@ -37,6 +37,10 @@ _git bỏ theo dõi file_
 - git rm --cached + tên file : git bỏ theo dõi file vẫn còn nhưng k còn theo dõi (1 file)
 - git rm -r -f --cached . : cũng vậy nhưng mà bỏ theo dõi tất cả file
 
+_Xóa hẳn file khỏi thư mục và bỏ theo dõi khỏi git luôn_
+
+- git rm + ten file / đường dẫn
+
 _Đã commit ít nhât 1 lần rồi và sửa tiếp, sau đó add tiếp mà muốn bỏ cái add mới thì dùng_
 _có nghĩa nó cần ít nhất 1 commit để quay về commit gần nhất_
 
