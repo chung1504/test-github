@@ -23,6 +23,12 @@ _Sửa commit gần nhất_
 _Sửa commit thứ 2 trở đi_
 
 - git rebase -i HEAD~3 : mở 3 commit gần nhất để chỉnh
+- Khi này nó sẽ hiện lên 3 commit thứ tự từ cũ tới mới 
+- Muốn sửa ta chỉnh pick thành "edit" , xóa thì chỉnh thành "drop" , "reword" đổi message
+- Rồi save, sau đó 
+- git add .
+- git commit --amend: chỉnh sửa lại message commit
+- git rebase --continue: tiếp tục 
 
 _Nếu mà commit rồi thì có 3 mức độ để quay lại staging (đã add)_
 
