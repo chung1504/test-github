@@ -44,7 +44,10 @@ _Xóa hẳn file khỏi thư mục và bỏ theo dõi khỏi git luôn_
 _Đã commit ít nhât 1 lần rồi và sửa tiếp, sau đó add tiếp mà muốn bỏ cái add mới thì dùng_
 _có nghĩa nó cần ít nhất 1 commit để quay về commit gần nhất_
 
-- git restore --staged + tên file: bỏ file khỏi staging , vẫn theo dõi, cái này phải có ít nhất 1 commit trên repo rồi mới thực hiện được, nó cần HEAD mà HEAD là commit gần nhất
+- git restore --staged + tên file: bỏ file khỏi staging , vẫn theo dõi, cái này phải có ít nhất 1 commit trên repo rồi mới thực hiện được, nó cần HEAD mà HEAD là commit gần nhất. Dùng khi mà gỡ file ra khi bạn lỡ add, và khogn xóa những thau đỏi trong file đó
+
+
+- git restore + tên file: Dùng khi mà muốn xóa toàn bộ thay đổi mà mới add thôi chưa commit, đưa file trở về đúng trạng thía ở commit gần nhất, kiểu như viết code rồi nhưng lỡ add thì nó sẽ quay về trạng thái chưa add và xóa hết code như bản cũ chưa làm gì cả
 
 _Bỏ add file khi lỡ add: có nghĩa chuyển trạng thái Add sang Modifier (lúc chưa add)_
 
