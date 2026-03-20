@@ -16,7 +16,7 @@ _Tạo branch_
 
 - git branch <tên_branch> : chỉ tạo thôi, chưa chuyển sang nhánh đó
 - git switch -c <tên_branch> : vừa tạo rồi chuểyn sanh nhánh đó luôn (-c = create)
-- git switch -b <tên_branch> : giống git switch -c
+- git checkout -b <tên_branch> : giống git switch -c
 
 _Chuyển branch_
 
